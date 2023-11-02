@@ -4,8 +4,12 @@
 ---
 
 ## Lista de Proyectos terminados
+*Bash*
 - [(Bash) Menu_Programas](./proyectos_terminados/menu_programas/menu_programas.md)
+
+*Python*
 - [(Python) Generador de audios](./proyectos_terminados/generador_audios/generador_audios.md) 
+- [(Python) Descifrador_Cesar](./proyectos_terminados/descifrador_cesar/descifrador_cesar.md)
 
 ## Lista de proyectos en Progreso
 - [(Markdown) Configuración_Obsidian_Estudiantes](./proyectos_en_progreso/configuracion_obsidian_estudiantes/configuración_obsidian_estudiantes.md)
