@@ -13,3 +13,4 @@
 
 ## Lista de proyectos en Progreso
 - [(Markdown) Configuración_Obsidian_Estudiantes](./proyectos_en_progreso/configuracion_obsidian_estudiantes/configuración_obsidian_estudiantes.md)
+- [(Python) Sistema para emprendimientos](./proyectos_en_progreso/sistema_emprendimientos/sistema_emprendimientos.md)
