@@ -1,0 +1,70 @@
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  padding: 20px;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8 rem;
+    margin: 0 50px;
+}
+
+caption {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+td, th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+    font-size: small;
+}
+
+th {background-color: rgb(235, 235, 235);
+}
+
+td {
+    text-align: center;
+}
+
+.col0 {
+  width: 100px;
+}
+
+
+
+.recreo {
+background-color: rgb(148, 148, 148);
+}
+
+ .dsi {
+  background-color: rgb(132, 255, 255);
+ }
+
+ .eco {
+  background-color: rgb(93, 228, 93);
+ }
+
+ .com {
+  background-color: rgb(255, 255, 114);
+ }
+
+ .dss {
+  background-color: rgb(238, 180, 74);
+ }
+
+ .an {
+  background-color: rgb(240, 107, 107);
+ }
