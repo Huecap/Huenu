@@ -1,3 +1,7 @@
+let secretNumber = generarNumeroAleatorio(10);
+let cantidadIntentos = 0;
+let intentosPermitidos = 5;
+let cantidadJuegosPermitidos = 2;
 
 // Trabajando con selectores en JS
 
@@ -13,8 +17,7 @@ let parrafo = document.querySelector('.texto__parrafo');
 
 parrafo.innerHTML = 'Indica un numero del 1 al 10';
 
-
-
+asignarTextoElemento('h4', `Juegos Restantes: ${cantidadJuegosPermitidos}`)
 
 // Definiendo funcion que modifica el contenido de un elemento html
 
@@ -35,12 +38,6 @@ function generarNumeroAleatorio(max){
 }
 
 
-
-
-let secretNumber = generarNumeroAleatorio(10);
-console.log(secretNumber);
-let cantidadIntentos = 0;
-let intentosPermitidos = 5;
 // Definimos una funcion 
 function verificarIntento(){
     let numeroUsuario = document.getElementById('numeroUsuario').value;
@@ -48,6 +45,7 @@ function verificarIntento(){
         cantidadIntentos += 1 
         if (secretNumber == parseInt(numeroUsuario)) {
             asignarTextoElemento('.texto__parrafo', `Acertaste el numero secreto en ${cantidadIntentos === 1 ? cantidadIntentos+' intento' : cantidadIntentos+' intentos' }`)
+            document.getElementById('reiniciar').removeAttribute('disabled');
         } else {
             if (secretNumber > parseInt(numeroUsuario)) {
                 asignarTextoElemento('.texto__parrafo', `El Numero secreto es mayor te quedan ${intentosPermitidos - cantidadIntentos} intentos`)
@@ -64,9 +62,22 @@ function verificarIntento(){
 };
 
 function nuevoJuego(){
-    secretNumber = generarNumeroAleatorio(10);
-    cantidadIntentos = 0
-    console.log(secretNumber);
-    asignarTextoElemento('p', 'Indica un numero del 1 al 10')
-    document.getElementById('reiniciar').setAttribute('disabled', 'disabled');
+    if (cantidadJuegosPermitidos != 0){
+        cantidadJuegosPermitidos--
+        // Nuevo numero aleatorio
+        secretNumber = generarNumeroAleatorio(10);
+        // Limpiar al caja
+        limpiarCampo()
+        // Reseteamos los intentos
+        cantidadIntentos = 0
+        console.log(secretNumber);
+        asignarTextoElemento('p', `Indica un numero del 1 al 10`)
+        asignarTextoElemento('h4', `Juegos Restantes: ${cantidadJuegosPermitidos}`)
+        // Setear un atributo (recibe 2 parametros, el primero es el atributo en cuesion y el segundo es el valor del atributo)
+        document.getElementById('reiniciar').setAttribute('disabled', 'disabled');
+    }
+    else{
+        asignarTextoElemento('p', `Alcanzaste el maximo de juegos permitidos`)
+        document.getElementById('reiniciar').setAttribute('disabled', 'disabled')
+    }
 }
