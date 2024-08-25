@@ -1,0 +1,84 @@
+
+/* Importaciones*/
+/*Importacionn de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh; /* Esto significa que toma toda la altura de la pantalla del dispositivo*/
+    box-sizing: border-box; /*https://developer.mozilla.org/es/docs/Web/CSS/box-sizing*/
+}
+
+
+a.link {
+    background-color: #22D4FD;
+    color: #000000;
+    border: 1px solid #22D4FD;
+    border-radius: 10px;
+    width: 280px;
+    height: 79px;
+    text-align: center;
+    line-height: 79px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+
+/* Css de Clases */
+.resaltadoTitulo {
+        color: aqua;
+        font-weight: bold;
+    }
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.presentation_content {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 482px;
+}
+
+.profilePicture{
+    border-radius: 10px;
+    border: 2px solid #22D4FD;
+    box-shadow: 0px 0px 100px #23ebe1;
+}
+
+.presentation_content_title {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.presentation_content_subtitle{
+    display: inline-block;
+    width: 500px;
+    font-family: "Krona One", sans-serif;
+    border: 1px solid #22D4FD;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 1px;
+}
+
+.presentation_content_paragraph {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+}
+
+.presentation_content_links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
