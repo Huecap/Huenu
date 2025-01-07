@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "2090-IA-Generativa-en-el-Front-main",
+			"path": "."
+		},
+		{
+			"name": "Oracle",
+			"path": "../../Documents/Oracle"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "2090-IA-Generativa-en-el-Front-main"
+	}
+}
