@@ -10,13 +10,39 @@ class Boton {
     
 }
 
-sonidos = ['pom', 'clap', 'tim', 'puff', 'splash', 'toim', 'psh', 'tic', 'tom']
-botones = []
-for (const sonido of sonidos) {
+/*
+const listaSonidos = ['pom', 'clap', 'tim', 'puff', 'splash', 'toim', 'psh', 'tic', 'tom']
+var listaBotones = []
+for (const sonido of listaSonidos) {
     const boton = new Boton(`.tecla_${sonido}`, `#sonido_tecla_${sonido}`)
     boton.reproducirSonido()
-    botones.push(boton)
+    listaBotones.push(boton)
 }
+*/
+
+/* Creación de una lista con todos los elementos que tienene la clases .tecla
+const listaDeTeclas = document.querySelectorAll('.tecla');
+console.log(listaDeTeclas);
+*/
+var listaBotones = [];
+const listaTeclas = document.querySelectorAll('.tecla');
+for (const tecla of listaTeclas) {
+    const boton = new Boton(`.${tecla.classList[1]}` , `#sonido_${tecla.classList[1]}`);
+    boton.reproducirSonido();
+    listaBotones.push(boton);
+    tecla.onkeydown = function(event){
+        if (event.key !== 'Tab') { // Evitar que la tecla Tab active la clase
+            tecla.classList.add('activa');
+        }
+    }
+    tecla.onkeyup = function(event){
+        if (event.key !== 'Tab') { // Evitar que la tecla Tab desactive la clase
+            tecla.classList.remove('activa');
+        }
+    }
+}
+
+
 
 /* Reproducir el audio */ 
 /*
