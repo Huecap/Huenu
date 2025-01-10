@@ -31,12 +31,12 @@ for (const tecla of listaTeclas) {
     boton.reproducirSonido();
     listaBotones.push(boton);
     tecla.onkeydown = function(event){
-        if (event.key !== 'Tab') { // Evitar que la tecla Tab active la clase
+        if (event.key == 'Enter' || event.key == 'Space') { // Evitar que la tecla Tab active la clase
             tecla.classList.add('activa');
         }
     }
     tecla.onkeyup = function(event){
-        if (event.key !== 'Tab') { // Evitar que la tecla Tab desactive la clase
+        if (event.key == 'Enter' || event.key == 'Space') { // Evitar que la tecla Tab desactive la clase
             tecla.classList.remove('activa');
         }
     }
