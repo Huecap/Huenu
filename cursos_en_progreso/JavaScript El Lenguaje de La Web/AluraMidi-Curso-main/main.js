@@ -9,7 +9,7 @@ class Boton {
     }
     
 }
-
+    
 /*
 const listaSonidos = ['pom', 'clap', 'tim', 'puff', 'splash', 'toim', 'psh', 'tic', 'tom']
 var listaBotones = []
