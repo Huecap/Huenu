@@ -22,8 +22,8 @@
 
             <div class="encabezado__buscar">
 
-                <input type="search" placeholder="Buscar" id="buscar" class="buscar__input">
-                <button class="buscar__boton"></button>
+                <input type="search" placeholder="Buscar" id="buscar" class="buscar__input" data-input-busqueda>
+                <button class="buscar__boton" data-boton-busqueda></button>
 
             </div>
 
@@ -34,7 +34,7 @@
 
     </header>
 
-    <ul class="videos__container" alt="videos alura">
+    <ul class="videos__container" alt="videos alura" data-lista>
         <li class="videos__item">
             <iframe width="100%" height="72%" src="https://www.youtube.com/embed/QjOWz9avkg8"
                 title="Front-end vs. Back-end: ¡Descubre el lado perfecto para ti!" frameborder="0"
@@ -80,7 +80,8 @@
             </div>
         </li>
     </ul>
-    <script src="./js/conexionAPI.js"></script>
+    <script src="./js/mostrarVideos.js" type="module"></script>
+    <script src="./js/buscarVideo.js" type="module"></script>
 </body>
 
 </html>
