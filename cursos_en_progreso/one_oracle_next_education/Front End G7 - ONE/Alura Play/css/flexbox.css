@@ -1,0 +1,204 @@
+
+html {
+    font-size: 62.5%; /* En este caso lo que hacemos es que la fuente sea de 10px (62,5% de 16px) */ 
+}
+
+/* Cabecera */
+.cabecera__container {
+    /*Centra la cabecera y hace que la misma se mantenga en la posicion
+    superior cuando scroleeamos*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.cabecera__buscar__item {
+    display: none;
+}
+
+
+/* Seccion superior */
+.superior__seccion__container{
+    display: flex;
+    align-items: center;
+    /* No wrap nos permite forzar a que el texto no haga wrap xd */
+    white-space: nowrap;
+
+    /* Overflow indica que al producirse un overflow nos muestre una barra de scroll */
+    overflow: scroll;
+    gap: 1.5rem;
+}
+
+
+/* Menu lateral */
+.menu__container{
+    position: fixed;
+    bottom: 0%;
+    height: 5rem;
+    width: 100%;
+}
+
+.menu__lista{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.menu__lista li {
+    /* algin-self nos permite alinear a cada elemento hijo de manera individual */
+    align-self: center;
+}
+
+.menu__lista:nth-child(2n),
+.menu__lista:nth-child(3n),
+.menu__lista:nth-child(4n){
+    display: none;
+}
+
+.menu__itens{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+/* Videos*/
+.videos__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.videos__item{
+    height: 30rem;
+    width: 28rem;
+    /* El felx grow hace que el elemento crezca por default es 0 */
+    /* Para hacer que disminuya es flex-shrink */
+    flex-grow: 1;
+}
+
+
+.descripcion-video {
+    margin-top: 1rem;
+    display: flex;
+    align-items: start; 
+    
+}
+
+.descripcion-video img {
+    margin-right: 1rem; 
+    flex-shrink: 0;  /*  Evita que la imagen se reduzca */
+    
+}
+.detalles__video {
+    flex-direction: column;
+    text-align:left;
+
+}
+
+.detalles__video h3{
+    margin-bottom: 10px;
+}
+
+
+/* Pie de Pagina */
+
+.rodapie__container {
+    display:flex;
+    /* flex-direction: column; */
+    /*Flex wrap nos permite ajustar la cantidad de columnas 
+    al tamaño del contenedo*/
+    /* flex-wrap: wrap; */
+    flex-flow: column wrap;
+    /* Con flex-flow podemos reemplzar flex direction y flex wrap en una sola linea */
+}
+
+
+
+
+/*Media Querys*/ 
+
+/* Tablets */
+
+@media (min-width: 834px) {
+
+    /* Cabecera  */
+    .cabecera__buscar__item {
+        display: block;
+    }
+
+    /* Menu lateral */
+
+    .menu__container{
+        position: fixed;
+        left: 0;
+        height: auto;
+        width: 7.5rem;
+        top: 8rem;
+    }
+    
+    .menu__lista{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        gap: 3.3rem;
+    
+    }
+    
+    .menu__lista li {
+        /* algin-self nos permite alinear a cada elemento hijo de manera individual */
+        align-self: center;
+    }
+    
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+        display: none;
+    }
+    
+    .menu__itens{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+
+
+    /* Pie de pagina */
+    .rodapie__container  {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1400px){
+    .menu__container{
+        width: 24rem;
+        overflow: scroll;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .menu__lista {
+        height: auto;
+        padding: 2rem 1.5rem 2rem 1.5rem;
+        gap: 1.5rem;
+    }
+    .menu__itens{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+    }
+
+
+}

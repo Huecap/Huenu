@@ -184,12 +184,12 @@ function draw() {
     if (pelotaX <= 0 || pelotaX >= ancho) {
         if (pelotaX <= 0) {
             puntajeMaquina++;  // Incrementar puntaje de la computadora
-            if (puntajeMaquina >= 1) {
+            if (puntajeMaquina >= 7) {
                 resultadoPartido = 'perdio'
             }
         } else {
             puntajeUsuario++;  // Incrementar puntaje del jugador
-            if (puntajeUsuario >= 1) {
+            if (puntajeUsuario >= 7) {
                 resultadoPartido = 'gano'
             }
         }
