@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --first-color: #8c0375;
+    --second-color: #c004d9;
+    --third-color: #9303A6;
+    --fourth-color: #5D04D9;
+    --fifth-color: #03318c;
+
+}
+
+html {
+    font-size: 62.5%; /* En este caso lo que hacemos es que la fuente sea de 10px (62,5% de 16px) */ 
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* Header */
+.header{
+    height: 5rem;
+    background-color: var(--fourth-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.header__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__content__title{
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Main content */
+.mainContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* Form */
+.addProducts{
+    color: var(--fifth-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    width: auto;
+    height: auto;
+    gap: 2rem;
+}
+
+.addProducts__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.addProducts__form__input{
+    height: 3rem;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--fifth-color);
+    text-indent: 1rem;
+}
+
+.addProducts__form__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.addProducts__form__button{
+    height: 3rem;
+    width: 10rem;
+    border: 0.2rem solid var(--fifth-color);
+    border-radius: 1rem;
+}
+
+
+
+/* Products */
+.addProducts{
+    display: flex;
+    flex-direction: column;
+}
+.products__title{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2rem;
+}
+
+/* Cards */
+.card{
+    height: 20rem;
+    width: 15rem;
+    background-color: var(--fourth-color);
+    display: flex;
+    flex-direction: column;
+    border: 0.5rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+}
+
+.card__description__text{
+    padding: 0.5rem;
+}
+
+
+
+.card__description__bottomPart{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__description__bottomPart__price{
+    padding: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.card__description__bottomPart__trashIcon{
+    height: 2rem;
+    width: 2rem;
+    align-self: flex-end;
+}
+
+/* Footer */
+.footer{
+    height: 8rem;
+    background-color: var(--fourth-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+    color: white;
+}
+
+.footer__title{
+    font-size: 1.5rem;
+}
+
+.footer__description {
+    font-size: 0.7rem;
+}
+
+
+@media (max-width: 480px){
+    .mainContent{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+} 
