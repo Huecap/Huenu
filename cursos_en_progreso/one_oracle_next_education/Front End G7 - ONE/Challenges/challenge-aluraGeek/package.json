@@ -1,0 +1,14 @@
+{
+  "name": "challenge-alurageek",
+  "version": "1.0.0",
+  "description": "Challenge alura geek",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

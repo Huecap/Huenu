@@ -18,46 +18,17 @@
     <main class="mainContent">
         <section class="products">
             <h2 class="products__title">My Products</h2>
-            <div class="cards">
-                <div class="card">
-                    <img class="card__image" src="./assets/image copy.png">
-                    <div class="card__description">
-                        <p class="card__description__text">Stormtrooper</p>
-                        <div class="card__description__bottomPart">
-                            <p class="card__description__bottomPart__price">$60,00</p>
-                            <img class="card__description__bottomPart__trashIcon" src="./assets/image copy 3.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__image" src="./assets/image copy.png">
-                    <div class="card__description">
-                        <p class="card__description__text">Stormtrooper</p>
-                        <div class="card__description__bottomPart">
-                            <p class="card__description__bottomPart__price">$60,00</p>
-                            <img class="card__description__bottomPart__trashIcon" src="./assets/image copy 3.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__image" src="./assets/image copy.png">
-                    <div class="card__description">
-                        <p class="card__description__text">Stormtrooper</p>
-                        <div class="card__description__bottomPart">
-                            <p class="card__description__bottomPart__price">$60,00</p>
-                            <img class="card__description__bottomPart__trashIcon" src="./assets/image copy 3.png">
-                        </div>
-                    </div>
-                </div>
-        </div>
+            <ul class="cards" data-list>
+                
+            </ul>
         </section>
 
         <section class="addProducts">
             <h2 class="addProducts__title">Add Products</h2>
-            <form class="addProducts__form">
-                <input class="addProducts__form__input" type="text" placeholder="name">
-                <input class="addProducts__form__input" type="number" placeholder="price">
-                <input class="addProducts__form__input" type="url" placeholder="image">
+            <form class="addProducts__form" data-form>
+                <input class="addProducts__form__input" type="text" placeholder="name" data-name>
+                <input class="addProducts__form__input" type="number" placeholder="price" data-price>
+                <input class="addProducts__form__input" type="text" placeholder="image" data-image>
                 <div class="addProducts__form__buttons">
                     <button class="addProducts__form__button" type="submit">Submit</button>
                     <button class="addProducts__form__button" type="reset">Clear</button>
@@ -70,5 +41,7 @@
         <h2 class="footer__title">Alura Geek</h2>
         <p class="footer__description">Desarrollado por Huenu Lihuel Capdevila Vicente</p>
     </footer>
+<script src="./js/showProducts.js" type="module"></script>
+<script src="./js/conectionAPI.js" type="module"></script>
 </body>
 </html>

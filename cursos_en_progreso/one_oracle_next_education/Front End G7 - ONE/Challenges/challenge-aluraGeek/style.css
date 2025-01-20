@@ -116,6 +116,12 @@ html {
     padding: 1rem;
     color: white;
 }
+.card__image{
+    width: 15rem;
+    height: 15rem;
+    border: 0.3rem solid black;
+    align-self: center;
+}
 
 .card__description__text{
     padding: 0.5rem;
@@ -125,7 +131,8 @@ html {
 
 .card__description__bottomPart{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .card__description__bottomPart__price{
@@ -136,6 +143,7 @@ html {
     height: 2rem;
     width: 2rem;
     align-self: flex-end;
+    
 }
 
 /* Footer */

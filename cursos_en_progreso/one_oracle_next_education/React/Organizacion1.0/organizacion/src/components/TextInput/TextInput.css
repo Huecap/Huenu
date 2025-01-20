@@ -1,0 +1,25 @@
+
+.textInput {
+    margin: 24px 0px;
+    
+}
+
+
+.textInput label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.textInput input {
+    width: 100%;
+    background-color: white;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08);
+    border: none;
+    padding: 30px 20px;
+    outline-color: #6278f7;
+    font-size: 16px;
+    box-sizing: border-box;
+    /* texcolor: #747474; */
+}

@@ -1,0 +1,21 @@
+
+.Form {
+    display: flex;
+    justify-content: center;
+}
+
+
+.Form form {
+    background-color: #F7f7f7;
+    max-width: 80%;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 8px 100px;
+}
+
+
+.Form h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #212121;
+}

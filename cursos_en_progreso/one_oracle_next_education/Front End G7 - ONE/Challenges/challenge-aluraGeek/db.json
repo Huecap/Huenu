@@ -1,27 +1,35 @@
-{"products":[
+{
+  "products": [
     {
-    "image": "./assets/image_copy.png",
-    "text": "Stormtrooper",
-    "price": 60
+      "image": "https://hadouken.com.ar/75821-superlarge_default/star-wars-the-black-series-first-order-stormtrooper-casco-electronico.jpg",
+      "text": "Stormtrooper",
+      "price": 60
     },
     {
-    "image": "./assets/image_copy.png",
-    "text": "Stormtrooper",
-    "price": 60
+      "image": "https://hadouken.com.ar/90199-superlarge_default/star-wars-the-black-series-first-order-stormtrooper-casco-electronico.jpg",
+      "text": "Stormtrooper",
+      "price": 60
     },
     {
-    "image": "./assets/image_copy.png",
-    "text": "Stormtrooper",
-    "price": 60
+      "image": "https://hadouken.com.ar/90198-medium_default/star-wars-the-black-series-first-order-stormtrooper-casco-electronico.jpg",
+      "text": "Stormtrooper",
+      "price": 60
     },
     {
-    "image": "./assets/image_copy.png",
-    "text": "Stormtrooper",
-    "price": 60
+      "image": "https://hadouken.com.ar/90197-superlarge_default/star-wars-the-black-series-first-order-stormtrooper-casco-electronico.jpg",
+      "text": "Stormtrooper",
+      "price": 60
     },
     {
-    "image": "./assets/image_copy.png",
-    "text": "Stormtrooper",
-    "price": 60
+      "image": "https://hadouken.com.ar/90200-superlarge_default/star-wars-the-black-series-first-order-stormtrooper-casco-electronico.jpg",
+      "text": "Stormtrooper",
+      "price": 60
+    },
+    {
+      "id": "97bb",
+      "text": "StormTrooper",
+      "price": "120",
+      "image": "https://hadouken.com.ar/90200-superlarge_default/star-wars-the-black-series-first-order-stormtrooper-casco-electronico.jpg"
     }
-]}
+  ]
+}
